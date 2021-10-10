@@ -1,0 +1,14 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config-server
+
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/rkhang7/cloud-config-server-student-faculty
+          default-label: main
+        bootstrap: false
